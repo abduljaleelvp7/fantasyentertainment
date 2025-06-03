@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Fantasy Entertainment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A responsive website template made exclusively by themeum">
+	<meta name="author" content="themeum">
+	<!-- FAVICON -->
+
+	<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#000000">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Header scripts -->
+	<script src="js/modernizr-2.8.3.min.js"></script>
+	<script src="js/queryloader2.min.js"></script>
+
+	<!-- =========================
+	   Preloader
+	============================== -->
+	<script>
+		window.addEventListener('DOMContentLoaded', function () {
+			"use strict";
+			new QueryLoader2(document.querySelector("body"), {
+				barColor: "#e64e3e",
+				backgroundColor: "#fff",
+				percentage: true,
+				barHeight: 1,
+				minimumTime: 200,
+				fadeOutTime: 1000
+			});
+		});
+	</script>
+</head> <!-- head -->
+
+<body>
+
+	<!-- ============== start wrapper  ============== -->
+	<div id="wrapper">
+		<!-- main-nav -->
+		<div class="main-nav">
+			<div class="container text-right">
+				<div class="logo-left">
+					<a href="javascript:void(0);" onclick="scrollToAnchor('home')" class="pull-left">
+						<img src="img/logo-header.jpeg" alt="logo">
+						<p class="since-text">Since 2018</p>
+					</a>
+				</div>
+				<a href="javascript:void(0)" class="menu-trigger">
+					<i class="fa fa-bars"></i>
+				</a>
+				<!--=========================
+					Start area for Menu 
+				============================== -->
+				<nav class="nav-menu">
+					<p class="dismiss-button animated zoomIn">
+						<img src="img/dismiss.png" alt="dismiss">
+					</p>
+					<ul>
+						<li class="active"><a href="javascript:void(0);" name="home"
+								onclick="scrollToAnchor('home')">Home</a></li>
+						<li><a href="javascript:void(0);" name="packages"
+								onclick="scrollToAnchor('packages')">Packages</a></li>
+						<li><a href="javascript:void(0);" name="activity"
+								onclick="scrollToAnchor('activity')">Activities</a></li>		
+						<li><a href="javascript:void(0);" name="our-gallery"
+								onclick="scrollToAnchor('our-gallery')">Gallery </a></li>
+						<li><a href="javascript:void(0);" name="promotions"
+								onclick="scrollToAnchor('promotions')">Promotions</a></li>
+						<li><a href="javascript:void(0);" name="contact" onclick="scrollToAnchor('contact')">Contact
+								Us</a></li>
+					</ul>
+				</nav>
+
+				<!-- End of menu area -->
+			</div>
+		</div> <!-- //end main-nav -->
+
+		<!-- ============== start home section  ============== -->
+		<section id="home">
+			<div id="home-slider" class="carousel slide in" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#home-slider" data-slide-to="0" class="active"></li>
+					<li data-target="#home-slider" data-slide-to="1"></li>
+					<li data-target="#home-slider" data-slide-to="2"></li>
+					<li data-target="#home-slider" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active" style="background-image: url(img/slider/bowling.jpeg)">
+						<div class="color-overlay">
+							<div class="caption">
+								<h1 class="main-title wow fadeInUp" data-wow-delay=".25s">Bowling</h1>
+								<p class="sub-title wow fadeInUp" data-wow-delay=".75s">This is how we roll.</p>
+							</div>
+						</div>
+					</div><!-- //item -->
+					<div class="item" style="background-image: url(img/slider/bounce.jpeg)">
+						<div class="color-overlay">
+							<div class="caption">
+								<h1 class="main-title wow fadeInUp" data-wow-delay=".25s">Bounce</h1>
+								<p class="sub-title wow fadeInUp" data-wow-delay=".75s">Reach the Heights</p>
+							</div>
+						</div>
+					</div><!-- //item -->
+					<div class="item" style="background-image: url(img/slider/billiards.jpeg)">
+						<div class="color-overlay">
+							<div class="caption">
+								<h1 class="main-title wow fadeInUp" data-wow-delay=".25s">Billiards</h1>
+								<p class="sub-title wow fadeInUp" data-wow-delay=".75s">Never Give Untill the Last Ball Falls</p>
+							</div>
+						</div>
+					</div><!-- //item -->
+					<div class="item" style="background-image: url(img/slider/party_hall.jpeg)">
+						<div class="color-overlay">
+							<div class="caption">
+								<h1 class="main-title wow fadeInUp" data-wow-delay=".25s">Party Hall</h1>
+								<p class="sub-title wow fadeInUp" data-wow-delay=".75s">Rise Up</p>
+							</div>
+						</div>
+					</div><!-- //item -->
+				</div>
+				<a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+				<a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+
+				<!-- arrow bellow -->
+				<a data-scroll id="arrow-bellow" name="packages" href="javascript:void(0);"
+					onclick="scrollToAnchor('packages')"><img src="img/icon/arrow-bellow.png" alt="arrow-bellow"></a>
+			</div>
+		</section>
+		<section class="announcement">
+			<marquee loop="true" loop="true" onmouseover="this.stop();" onmouseout="this.start();">
+				<p>In partnering with the authorities and as a part of our commitment to your health and safety</p>
+				<p>Fantasy Entertainment has temporarily closed its stores until 31st March, 2020 or at such time the situation will be re-evaluated. </p>
+				<p>#Stay_Safe #Stay_Home</p>
+			</marquee>
+		</section>
+		<!-- ========= //End home section ========= -->
+
+		<!-- ============== Start features section ============== -->
+		<section id="packages">
+			<div class="container">
+				<h3 class="section-title wow fadeInDown">Our Packages</h3>
+				<div class="row">
+					<div class="col-md-4 col-sm-6 feature-item">
+						<div class="content text-center wow fadeInDown" data-wow-delay=".15s">
+							<div class="width-ratio ratio4-5">
+								<img class="uc-image" src="img/package/01.jpg" alt="img">
+								<div class="feature-caption">
+									<h5 class="title">Birthday party</h5>
+									<p class="info">
+										Birthday parties cute enough to eat! Ready to party like a pineapple? These
+										adorable
+										birthday themes are inspired by her favorite foods. Don't worry, be happy!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 feature-item">
+						<div class="content text-center wow fadeInDown" data-wow-delay=".35s">
+							<div class="width-ratio ratio4-5">
+								<img class="uc-image" src="img/package/02.jpg" alt="img">
+								<div class="feature-caption">
+									<h5 class="title">Company event</h5>
+									<p class="info">
+										Any event sponsored by a company that targets its employees or clients can be
+										called
+										a
+										corporate event
+										we will do our best to make you happy!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 feature-item">
+						<div class="content text-center wow fadeInDown" data-wow-delay=".55s">
+							<div class="width-ratio ratio4-5">
+								<img class="uc-image" src="img/package/03.jpg" alt="img">
+								<div class="feature-caption">
+									<h5 class="title">School kids packages</h5>
+									<p class="info">
+										Give the children a well-deserved recreation from academic studies and treat them to a day at play.
+										Our special package for school students is designed to provide a memorable experience for children
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- //row -->
+			</div> <!-- //container -->
+		</section>
+		<!-- ========= //End features section ========= -->
+		<!-- ============== Start Our Activity ============== -->
+		<div class="activity" id="activity">
+			<div class="container">
+				<div class="row">
+					<!-- left part -->
+					<div class="col-sm-12">
+						<div class="left-part ptt80">
+							<h3 class="title mtb40">Our Activity</h3>
+							<div role="tabpanel">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+										<a href="#tab01" aria-controls="tab01" role="tab" data-toggle="tab">Bowling</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab02" aria-controls="tab02" role="tab"
+											data-toggle="tab">Billiards</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab03" aria-controls="tab03" role="tab" data-toggle="tab">Bounce</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab04" aria-controls="tab04" role="tab" data-toggle="tab">Climbing
+											wall</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab05" aria-controls="tab05" role="tab" data-toggle="tab">Party
+											hall</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab06" aria-controls="tab06" role="tab" data-toggle="tab">Coffee
+											shop</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab07" aria-controls="tab07" role="tab" data-toggle="tab">Ninja
+											Course</a>
+									</li>
+								</ul>
+
+								<!-- Tab panes -->
+								<div class="tab-content">
+									<div role="tabpanel" class="tab-pane active" id="tab01">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="width-ratio ratio4-3">
+													<img class="uc-image" src="img/activity/bowling.jpeg"
+														alt="bowling" />
+												</div>
+											</div>
+											<div class="col-md-6 text-left">
+												<h2 class="mtb20">Bowling</h2>
+												<p>Fantasy bowling offer you a very good experience in pin bowling with a stylish
+and inviting atmosphere where you can relax and play with friends.</p>
+											</div>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="tab02">
+										<div class="col-sm-6">
+											<div class="width-ratio ratio4-3">
+												<img class="uc-image" src="img/activity/billiards.jpg"
+													alt="billiards" />
+											</div>
+										</div>
+										<div class="col-md-6 text-left">
+											<h2 class="mtb20">Billiards</h2>
+											<p>We offer you a well-balanced, modern and clean billiard tables have a stylish
+and inviting atmosphere where you can relax and play with friends.</p>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="tab03">
+										<div class="col-sm-6">
+											<div class="width-ratio ratio4-3">
+												<img class="uc-image" src="img/activity/bounce.jpeg" alt="bounce" />
+											</div>
+										</div>
+										<div class="col-sm-6 text-left">
+											<h2 class="mtb20">Bounce</h2>
+											<p>We are passionate about developing skills of balance, coordination and agility in kids that will become the Freestylers of tomorrow.
+											Our Bounce Station Made up of wall to wall trampolines, climbing and Many adventure challenge courses
+											</p>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="tab04">
+										<div class="col-sm-6">
+											<div class="width-ratio ratio4-3">
+												<img class="uc-image" src="img/activity/climbing_wall.jpeg"
+													alt="climbing_wall" />
+											</div>
+										</div>
+										<div class="col-sm-6 text-left">
+											<h2 class="mtb20">Climbing Wall</h2>
+											<p>Climbing wall flexes both your mental and physical muscles. Reach to new heights by experiencing our popular climbing walls </p>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="tab05">
+										<div class="col-sm-6">
+											<div class="width-ratio ratio4-3">
+												<img class="uc-image" src="img/activity/party_hall.jpeg"
+													alt="Party Hall" />
+											</div>
+										</div>
+										<div class="col-sm-6 text-left">
+											<h2 class="mtb20">Party Hall</h2>
+											<p>Celebrate your birthday with one of our fun birthday package.
+We offer a variety of activities and food to keep everyone happy.</p>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="tab06">
+										<div class="col-sm-6">
+											<div class="width-ratio ratio4-3">
+												<img class="uc-image" src="img/activity/cofee_shop.jpeg"
+													alt="cofee shop" />
+											</div>
+										</div>
+										<div class="col-sm-6 text-left">
+											<h2 class="mtb20">Coffee Shop</h2>
+											<p>It provides its customers five-star hospitality, with a friendly atmosphere &amp;
+trendy decor, at responsible prices that are within the reach of everyone.</p>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="tab07">
+										<div class="col-sm-6">
+											<div class="width-ratio ratio4-3">
+												<img class="uc-image" src="img/activity/ninja_course.jpeg"
+													alt="ninja course" />
+											</div>
+										</div>
+										<div class="col-sm-6 text-left">
+											<h2 class="mtb20">Ninja Course</h2>
+											<p>Ninja Course is a brand for obstacle courses that challenge and improve the strength, endurance, coordination, agility, and balance of children and adults.
+											Our ninja course comes with everything needed to Engage All skill levels in a shining atmosphere.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!-- // left-part -->
+				</div> <!-- //row -->
+			</div>
+		</div> <!-- //container -->
+		</section>
+		<!-- ========= //End Our Activity ========= -->
+
+		<!-- ============== Start Gallery section ============== -->
+		<section id="our-gallery">
+			<div class="container">
+				<h3 class="section-title wow fadeInDown">Our Gallery</h3>
+				<div class="row">
+					<div class="col-md-4 col-sm-6 gallery-item">
+						<figure class="content wow fadeIn width-ratio ratio1-1" data-wow-delay=".15s">
+							<img src="img/gallery/01.jpeg" class="uc-image img-100p" alt="bowling">
+							<figcaption class="caption-full-width">
+								<div class="caption horizontal-vertical-center">
+									<p class="icon animated fadeInDown">
+										<a data-lightbox="lightbox-bowling" href="img/gallery/01.jpeg">
+											<img src="img/gallery/icon.png" alt="icon"></a>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bowling"
+												href="img/gallery/bowling/2.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bowling"
+												href="img/gallery/bowling/3.jpg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bowling"
+												href="img/gallery/bowling/4.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bowling"
+												href="img/gallery/bowling/5.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bowling"
+												href="img/gallery/bowling/6.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bowling"
+												href="img/gallery/bowling/7.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bowling"
+												href="img/gallery/bowling/8.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bowling"
+												href="img/gallery/bowling/9.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bowling"
+												href="img/gallery/bowling/10.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bowling"
+												href="img/gallery/bowling/11.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bowling"
+												href="img/gallery/bowling/12.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bowling"
+												href="img/gallery/bowling/13.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bowling"
+												href="img/gallery/bowling/14.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bowling"
+												href="img/gallery/bowling/15.jpg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bowling"
+												href="img/gallery/bowling/16.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bowling"
+												href="img/gallery/bowling/17.jpg"></a>
+										</span>
+									</p>
+									<p class="title animated fadeInUp">Bowling</p>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-4 col-sm-6 gallery-item">
+						<figure class="content wow fadeIn width-ratio ratio1-1" data-wow-delay=".25s">
+							<img src="img/gallery/bounce/1.jpg" class="img-100p uc-image" alt="bounce">
+							<figcaption class="caption-full-width">
+								<div class="caption horizontal-vertical-center">
+									<div class="icon animated fadeInDown"><a data-lightbox="lightbox-bounce"
+											href="img/gallery/02.jpeg"><img src="img/gallery/icon.png" alt="icon"></a>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/2.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/3.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/4.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/5.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/6.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/7.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/8.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/9.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/10.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/11.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/12.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/13.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/14.jpg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/15.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/16.jpg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/17.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/18.jpg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/19.jpg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/20.jpg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/21.jpg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/22.jpg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/23.jpg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-bounce"
+												href="img/gallery/bounce/24.jpg"></a>
+										</span>
+										
+										
+										</p>
+										<p class="title animated fadeInUp">Bounce</p>
+									</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-4 col-sm-6 gallery-item">
+						<figure class="content wow fadeIn width-ratio ratio1-1" data-wow-delay=".65s">
+							<img src="img/gallery/billiards/1.jpeg" class="uc-image  img-100p" alt="billiards">
+							<figcaption class="caption-full-width">
+								<div class="caption horizontal-vertical-center">
+									<p class="icon animated fadeInDown"><a data-lightbox="lightbox-billiards"
+											href="img/gallery/06.jpeg"><img src="img/gallery/icon.png" alt="icon"></a>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-billiards"
+												href="img/gallery/billiards/2.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-billiards"
+												href="img/gallery/billiards/3.jpg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-billiards"
+												href="img/gallery/billiards/4.jpg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-billiards"
+												href="img/gallery/billiards/5.jpg"></a>
+										</span>
+									</p>
+									<p class="title animated fadeInUp">Billiards</p>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-4 col-sm-6 gallery-item">
+						<figure class="content wow fadeIn width-ratio ratio1-1" data-wow-delay=".35s">
+							<img src="img/gallery/party/1.jpg" class="uc-image  img-100p" alt="party">
+							<figcaption class="caption-full-width">
+								<div class="caption horizontal-vertical-center">
+									<p class="icon animated fadeInDown"><a data-lightbox="lightbox-party"
+											href="img/gallery/03.jpeg"><img src="img/gallery/icon.png" alt="icon"></a>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-party"
+												href="img/gallery/party/2.jpg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-party"
+												href="img/gallery/party/3.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-party"
+												href="img/gallery/party/4.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-party"
+												href="img/gallery/party/5.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-party"
+												href="img/gallery/party/6.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-party"
+												href="img/gallery/party/7.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-party"
+												href="img/gallery/party/8.jpg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-party"
+												href="img/gallery/party/9.jpg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-party"
+												href="img/gallery/party/10.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-party"
+												href="img/gallery/party/11.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-party"
+												href="img/gallery/party/12.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-party"
+												href="img/gallery/party/13.jpeg"></a>
+										</span>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-party"
+												href="img/gallery/party/14.jpeg"></a>
+										</span>
+									</p>
+									<p class="title animated fadeInUp">Party</p>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-4 col-sm-6 gallery-item">
+						<figure class="content wow fadeIn width-ratio ratio1-1" data-wow-delay=".45s">
+							<img src="img/gallery/climbing/1.jpg" class="uc-image  img-100p" alt="gallery">
+							<figcaption class="caption-full-width">
+								<div class="caption horizontal-vertical-center">
+									<p class="icon animated fadeInDown"><a data-lightbox="lightbox"
+											href="img/gallery/04.jpg"><img src="img/gallery/icon.png" alt="icon"></a>
+									</p>
+										<span>
+											<a class="hidden" data-lightbox="lightbox-party"
+												href="img/gallery/climbing/2.jpg"></a>
+										</span>
+									<p class="title animated fadeInUp">Climping</p>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-4 col-sm-6 gallery-item">
+						<figure class="content wow fadeIn width-ratio ratio1-1" data-wow-delay=".55s">
+							<img src="img/gallery/05.jpg" class="uc-image  img-100p" alt="gallery">
+							<figcaption class="caption-full-width">
+								<div class="caption horizontal-vertical-center">
+									<p class="icon animated fadeInDown"><a data-lightbox="lightbox"
+											href="img/gallery/05.jpg"><img src="img/gallery/icon.png" alt="icon"></a>
+									</p>
+									<p class="title animated fadeInUp">Others</p>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div> <!-- // container -->
+		</section>
+		<!-- ========= //End Gallery section ========= -->
+
+		<section id="uc-video">
+			<div class="container">
+				<div class="embed-responsive embed-responsive-16by9">
+					<video class="embed-responsive-item" poster="img/video/fantacy-poster.jpg" id="bgvid" playsinline
+						loop>
+						<source src="img/video/fantacy.mp4" type="video/mp4">
+					</video>
+					<div class="video-caption">
+						<a href="javascript:void(0);" id="play-btn" class="play"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="uc-video">
+			<div class="container">
+				<div class="embed-responsive embed-responsive-16by9">
+					<video class="embed-responsive-item" poster="img/video/opening_Moment.jpg" id="bgvid-second" playsinline
+						loop>
+						<source src="img/video/opening.mp4" type="video/mp4">
+					</video>
+					<div class="video-caption">
+						<a href="javascript:void(0);" id="play-btn-second" class="play"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- ============== Start Promotions ============== -->
+		<section id="promotions" class="text-center">
+			<h3 class="section-title wow fadeInDown">Promotions</h3>
+			<div class="color-overlay ptt100 ptb100">
+				<div class="container">
+					<div class="row">
+						<div class="promotion-content">
+							<div class="col-sm-6 wow zoomIn">
+								<p class="icon">
+									<img class="img-responsive" src="img/promotions/01.jpg" alt="img">
+								</p>
+								<p class="title">BOWLING VOUCHER</p>
+								<p class="info">
+									Special Bowling voucher available on great offers. Users can avail this offer by contacting the reception.
+								</p>
+							</div>
+							<div class="col-sm-6 wow zoomIn">
+								<p class="icon">
+									<img class="img-responsive" src="img/promotions/03.jpg" alt="img">
+								</p>
+								<p class="title">MONDAY BOWLING DAY</p>
+								<p class="info">
+									Great offer for Bowling Players. Every Monday Play a Bowling Game for only 6 AED.Offer is not valid during Public holidays.
+								</p>
+							</div>
+						</div>
+					</div> <!-- //row -->
+				</div> <!-- //container -->
+			</div>
+		</section>
+		<!-- ========= //End Promotions ========= -->
+
+		<!-- ============== Start leave comment ============== -->
+		<section class="comments-form ptt100 ptb80" id="contact">
+			<div class="container">
+			<div class="container text-center">
+					<h3 class="section-title wow fadeInDown">Contact Us</h3>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 text-center">
+						<div class="row">
+							<div class="col-md-12 mtb20 each-part wow zoomIn">
+								<p class="icon">
+									<img style="width:45px;" src="img/icon/mobile.png" alt="img">
+								</p>
+								<p class="info">
+									<a href="tel:+97128849131">&bull; +97128849131</a><br>
+									<a href="tel:+971555688798">&bull; +971555688798</a>
+								</p>
+							</div>
+							<div class="col-md-12  mtb20 each-part wow zoomIn">
+								<p class="icon">
+									<img src="img/icon/mail-info.png" alt="img">
+								</p>
+								<p class="info">
+									<a
+										href="mailto:info@fantasyentertainment.fun">&bull; info@fantasyentertainment.fun</a><br />
+									<a href="mailto:fantasybowlingad@gmail.com">&bull; fantasybowlingad@gmail.com</a>
+								</p>
+							</div>
+							<!-- <div class="col-md-3 col-sm-6 each-part wow zoomIn">
+								<p class="icon">
+									<img style="width:51px;" src="img/icon/work-time.png" alt="img">
+								</p>
+								<p class="title">Work Time</p>
+								<p class="info">
+									Mon. - Fri. (10:00 - 22:00)
+								</p>
+							</div> -->
+							<div class="col-md-12 each-part wow zoomIn">
+								<p class="icon">
+									<img style="width:51px;" src="img/icon/work-place.png" alt="img">
+								</p>
+								<span class="info">&bull; Fantasy Bowling center, 1st floor Ruwais mall</span>
+								<span class="info">&bull; Fantasy Bounce ground floor Ruwais mall</span>
+								<span class="info">&bull; Fantasy Bowling center Adnoc Housing Complex</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+
+						<h3 class="section-title wow fadeInDown">Leave a comment</h3>
+						<form action="#" class="form wow fadeInUp">
+							<input type="text" class="form-control" placeholder="Enter name" maxlength="75" required>
+							<input type="email" class="form-control" placeholder="Enter email" maxlength="75" required>
+							<textarea name="" class="form-control" cols="30" rows="6" placeholder="Enter message"
+								maxlength="500" required></textarea>
+							<input type="submit" class="btn btn-submit text-uppercase" value="Send" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ========= //End leave comment ========= -->
+        <!-- ============== Start map-content ============== -->
+		<section id="map">
+			<div id="map-content">
+				<div id="gmap">
+				</div>
+			</div>
+		</section>
+		<!-- ========= //End map-content ========= -->
+
+		<!-- ============== Start footer ============== -->
+		<section id="footer">
+			<div class="color-overlay ptt80">
+				<div class="container mtb50">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<div class="footer-logo mtb30">
+								<img src="img/logo-header.jpeg" alt="logo">
+								<p class="since-text">Since 2018</p>
+							</div>
+							<ul class="nav-footer list-inline">
+								<li class="active"><a href="javascript:void(0);" name="home"
+										onclick="scrollToAnchor('home')">Home</a></li>
+								<li><a href="javascript:void(0);" name="packages"
+										onclick="scrollToAnchor('packages')">Packages </a></li>
+								<li><a href="javascript:void(0);" name="our-gallery"
+										onclick="scrollToAnchor('our-gallery')">Gallery </a></li>
+								<li><a href="javascript:void(0);" name="activity"
+										onclick="scrollToAnchor('activity')">Activities</a></li>
+								<li><a href="javascript:void(0);" name="promotions"
+										onclick="scrollToAnchor('promotions')">Promotions</a></li>
+								<li><a href="javascript:void(0);" name="contact"
+										onclick="scrollToAnchor('contact')">Contact us</a></li>
+							</ul>
+							<ul class="social-icon-footer list-inline">
+								<li><a target="_blank" href="https://www.facebook.com/ruwaismall.bowling.5"><i
+											class="fa fa-facebook"></i></a></li>
+								<li><a target="_blank"
+										href="https://www.instagram.com/p/BoAiTKMgqy8/?igshid=skwrbkssl682"><i
+											class="fa fa-instagram"></i></a></li>
+								<!-- <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a target="_blank" href="#"><i class="fa fa-pinterest"></i></a></li> -->
+							</ul>
+						</div>
+					</div> <!-- //row -->
+				</div>
+			</div> <!-- //container -->
+
+			<!-- copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-4">
+							<p class="info">
+								&copy; Copyright FANTASY ENTERTAINMENT . All Rights Reserved
+							</p>
+						</div>
+					</div> <!-- //row -->
+				</div> <!-- //container -->
+			</div> <!-- //end copyright -->
+		</section>
+		<!-- ========= //End footer ========= -->
+
+	</div> <!-- //end wrapper -->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- animation effects -->
+	<script src="js/wow.min.js"></script>
+	<!-- count-down -->
+	<script src="js/jquery.inview.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<!-- content slider -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- lightbox -->
+	<script src="js/lightbox.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="js/gmaps.js"></script>
+	<script src="js/init-map.js"></script>
+	<!-- custom js -->
+	<script src="js/app.js"></script>
+	<script>
+		function scrollToAnchor(aid) {
+			var aTag = $("#" + aid + "");
+			var item = $('[name="' + aid + '"]');
+			$('#footer ul li, .nav-menu ul li').removeClass('active');
+			item.each(function (index, element) {
+				$(element).parent().addClass('active');
+			});
+			$('html,body').animate({
+				scrollTop: aTag.offset().top - 50
+			}, 'slow');
+		}
+		scrollToAnchor('home');
+
+		// Bind to scroll
+		var lastId,
+			topMenu = $(".main-nav, #footer ul"),
+			menuItems = topMenu.find("a"),
+			topMenuHeight = topMenu.outerHeight() + 15,
+			scrollItems = menuItems.map(function () {
+				var item = $("#" + $(this).attr("name") + "");
+				if (item.length) { return item; }
+			});
+		$(window).scroll(function () {
+
+			var fromTop = $(this).scrollTop() + topMenuHeight;
+			var cur = scrollItems.map(function () {
+				if ($(this).offset().top < fromTop)
+					return this;
+			});
+			cur = cur[cur.length - 1];
+			var id = cur && cur.length ? cur[0].id : "";
+			if (lastId !== id) {
+				lastId = id;
+				menuItems
+					.parent().removeClass("active")
+					.end().filter("[name='" + id + "']").parent().addClass("active");
+			}
+		});
+	</script>
+</body>
+
+</html>
