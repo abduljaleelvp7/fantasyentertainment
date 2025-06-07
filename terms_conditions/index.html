@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Terms & Conditions - Fantasy Kids Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    body { padding: 40px; background: #f4f4f4; font-family: 'Segoe UI', sans-serif; }
+    .container { max-width: 800px; background: white; padding: 30px; box-shadow: 0 0 10px #ccc; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Terms & Conditions</h2>
+    <ul id="termsList"></ul>
+    <a href="login.html" class="btn btn-primary">Admin Login</a>
+  </div>
+
+  <script>
+    const defaultTerms = [
+      "The cards are only valid at the Fantasy Kids Hub located in Al Dhannah Mall.",
+      "The card credit balance and any redemption points valid only for six months from the date of issuance.",
+      "The cards cannot be sold, transferred, or refunded, and they cannot be used for any other services.",
+      "Fantasy Kids Hub Management will not be responsible for any lost, stolen, or damaged cards. If a registered card is lost, a fee of AED 5 will be charged for a replacement.",
+      "VAT of 5% applies to all transactions.",
+      "Fantasy Kids Hub reserves the right to modify these terms and conditions at any time without prior notice.",
+      "All promotions and offers are subject to change without notice.",
+      "All other terms and conditions will apply."
+    ];
+
+    let terms = JSON.parse(localStorage.getItem("terms")) || defaultTerms;
+    const list = document.getElementById("termsList");
+    terms.forEach((term, i) => {
+      const li = document.createElement("li");
+      li.textContent = term;
+      list.appendChild(li);
+    });
+  </script>
+</body>
+</html>
